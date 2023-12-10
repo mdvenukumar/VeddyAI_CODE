@@ -1,13 +1,11 @@
 import streamlit as st
 import google.generativeai as veddyAI
-from dotenv import load_dotenv
-import os
-from langchain.prompts import PromptTemplate
+
 
 prompt_template = """Your job is to generate code accordingly and precisely for asked question if the question is incomplete then just reply by what do you want?"""
 
-load_dotenv()
-API_KEY = os.environ.get("KEY")
+
+API_KEY = st.secrets("KEY")
 veddyAI.configure(api_key=API_KEY)
 
 def main():
