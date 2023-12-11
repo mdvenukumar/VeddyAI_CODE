@@ -34,14 +34,13 @@ def main():
                 st.markdown(response.result, unsafe_allow_html=True)
         else:
             st.warning("Please enter a prompt before generating text.")
-        hide_st_style = """
-                        <style>
-                        # MainMenu {visibility: hidden;}
-                        footer {visibility: hidden;}
-                        </style>
-
-                        """
-        st.markdown(hide_st_style, unsafe_allow_html=True)
+    hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+        st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
     # Custom Footer with Styling
     st.markdown(
