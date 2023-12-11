@@ -5,7 +5,7 @@ import os
 
 prompt_template = """Your job is to generate code accordingly and precisely for asked question if the question is incomplete then just reply by what do you want?"""
 
-os.environ['API_KEY'] = st.secrets["KEY"]
+API_KEY = st.secrets["KEY"]
 veddyAI.configure(api_key=API_KEY)
 
 def main():
