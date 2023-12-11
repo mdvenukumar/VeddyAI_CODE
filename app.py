@@ -46,7 +46,7 @@ def main():
     # Custom Footer with Styling
     st.markdown(
         """
-        <div style="position: fixed; bottom: 10px; right: 10px; background-color: #ff4b4b; padding: 10px; border-radius: 8px; color: white;">
+        <div style="position: fixed; bottom: 10px; left: 10px; background-color: #ff4b4b; padding: 10px; border-radius: 8px; color: white;">
             Thevk22
         </div>
         """,
